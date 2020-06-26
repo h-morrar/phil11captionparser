@@ -129,5 +129,4 @@ dmypy.json
 .pyre/
 
 # text file input and outputs
-lecture-1.txt
-lecture-1-parsed.txt
+*.txt
