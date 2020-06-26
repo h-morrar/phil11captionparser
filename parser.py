@@ -1,12 +1,14 @@
+import sys
+# Usage: python3 parser.py lectureNumber inputFileName
 def main():
 
-    lectureNum = "1"
+    lectureNum = str(sys.argv[1])
 
-    originalFileName = "lecture-" + lectureNum
+    originalFileName = str(sys.argv[2])
     originalFileObj = open(r"%s.txt" % originalFileName, "r")
 
-    newFileName = originalFileName + "-parsed"
-    newFileObj = open(r"%s.txt" % newFileName, "a")
+    newFileName = originalFileName + "-parsed.txt"
+    newFileObj = open(r"%s" % newFileName, "a")
 
     Lines = originalFileObj.readlines()
 
@@ -17,7 +19,7 @@ def main():
             continue
         else:
             newFileObj.write(line.strip() + " ")
-            
+
     originalFileObj.close()
     newFileObj.close()
 main()
