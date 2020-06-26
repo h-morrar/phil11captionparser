@@ -17,5 +17,7 @@ def main():
             continue
         else:
             newFileObj.write(line.strip() + " ")
-
+            
+    originalFileObj.close()
+    newFileObj.close()
 main()
