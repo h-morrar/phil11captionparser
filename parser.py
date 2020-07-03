@@ -2,8 +2,6 @@ import sys
 # Usage: python3 parser.py lectureNumber inputFileName
 def main():
 
-    lectureNum = str(sys.argv[1])
-
     originalFileName = str(sys.argv[2])
     originalFileObj = open(r"%s.txt" % originalFileName, "r")
 
