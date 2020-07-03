@@ -130,3 +130,5 @@ dmypy.json
 
 # text file input and outputs
 *.txt
+
+.DS_Store
